@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chess Pieces Guide</title>
+    <link type="image/x-icon" href="favicon.png" rel="shortcut icon">
+</head>
+<body>
+    <header class="header">
+        <span class="header__welcome">Welcome to chess guide</span>
+        <span class="header__description">Here you can learn basic chess pieces moves</span>
+        <span class="header__choice">Choose piece</span>
+    </header>
+    <div class="container">
+        <div class="container__pieces">
+            <div class="pawn" id="piece">
+                <img src="pieces/pawn.png" alt="pawn" draggable="false">
+            </div>
+            
+            <div class="knight" id="piece">
+                <img src="pieces/knight.png" alt="knight" draggable="false">
+            </div>
+            
+            <div class="bishop" id="piece">
+                <img src="pieces/bishop.png" alt="bishop" draggable="false">
+            </div>
+            
+            <div class="rook" id="piece">
+                <img src="pieces/rook.png" alt="rook" draggable="false">
+            </div>
+            
+            <div class="queen" id="piece">
+                <img src="pieces/queen.png" alt="queen" draggable="false">
+            </div>
+
+            <div class="king" id="piece">
+                <img src="pieces/king.png" alt="king" draggable="false">
+            </div>
+        </div>
+    </div>
+    <div class="demonstration">
+        <div class="demonstration__piece">Choose a piece</div>
+        <div class="demonstration__piece-moves"></div>
+        <div class="demonstration__drag">Try to move it by yourself</div>
+        <img src="reload.png" draggable="false" height="53vh" width='80vw' class='demonstration__button reload'>
+        <img src="back.png" draggable="false" height="55vh" width='80vw' class='demonstration__button back'>
+        <div class="demonstration__chessboard">
+            <div id="A1" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="A2" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="A3" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="A4" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="A5" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+
+            <div id="B1" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="B2" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="B3" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="B4" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="B5" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            
+            <div id="C1" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="C2" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="C3" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="C4" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="C5" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+
+            <div id="D1" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="D2" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="D3" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="D4" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="D5" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+
+            <div id="E1" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="E2" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="E3" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="E4" class="demonstration__chessboard-cell black" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+            <div id="E5" class="demonstration__chessboard-cell white" ondragover="onDragOver(event)" ondrop="onDrop(event)"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
