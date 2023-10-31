@@ -1,4 +1,4 @@
-# Chess https://quoiaaaa3.github.io/Chess/
+# https://quoiaaaa3.github.io/Chess/
 
 
 Данный проект позволит вам немного погрузиться в мир шахмат и овладеть хождением фигур <br> <br>
